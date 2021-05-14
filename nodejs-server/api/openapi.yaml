@@ -1,0 +1,36 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.1"
+servers:
+- url: http://localhost:8080
+paths:
+  /wx/v2/member/account/closure/reasons:
+    get:
+      description: Auto generated using Swagger Inspector
+      operationId: wxV2MemberAccountClosureReasonsGET
+      parameters:
+      - name: source
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: "1"
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+                x-content-type: application/json; charset=utf-8
+              examples: {}
+      servers:
+      - url: http://localhost:8080
+      x-swagger-router-controller: Default
+    servers:
+    - url: http://localhost:8080
+components: {}
